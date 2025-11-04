@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock and Read</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header> 
+    <h1>Rock and Read</h1>
+    <p>Tune in, Read On</p>
+  </header>
+  <style>
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #eef1e9d4;
+      padding: 1px 1px;
+      box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+  }
+
+  nav li {
+      margin: 0 20px;
+      position: relative;
+  }
+
+  nav li a {
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #0e0d0d;
+      padding: 1px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+
+  nav li a:hover {
+      background-color: #2E3A24;
+      color: #fff;
+  }
+
+  .hover-trigger {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  }
+
+  .hover-trigger img.profile-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 2px solid #2E3A24;
+      transition: transform 0.3s ease;
+  }
+
+  .hover-trigger span {
+      font-size: 1em;
+      font-weight: bold;
+      color: #333;
+  }
+
+  .hover-trigger:hover img.profile-icon {
+      transform: scale(1.1);
+  }
+
+  /* Popup Styles */
+  .about-popup {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      z-index: 9999;
+      text-align: center;
+      border: 2px solid #2E3A24;
+  }
+
+  .about-popup img {
+      max-width: 100%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 3px solid #2E3A24;
+  }
+
+  .about-popup h2 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #333;
+  }
+
+  .about-popup p {
+      font-size: 1em;
+      color: #666;
+  }
+
+  /* Show popup on hover */
+  .about-hover-container:hover .about-popup {
+      display: block;
+  }
+</style>
+<nav>
+  <ul>
+      <li class="about-hover-container">
+          <a href="aboutme.html">About Me</a>
+          <div class="about-popup">
+              <img src="1.jpg" alt="Profile Picture">
+              <p>Hello, I'm Lahari. I created Rock and Read to combine my two passions which if you havent figured out already are books and music!. </p>
+            
+            </div>
+      </li>
+  </ul>
+</nav>
+
+  <main>
+    <!-- Unified Search Section -->
+    <section id="search-section">
+      <h2>Search Recommendations</h2>
+      
+      <label for="genre-select">Choose a book genre:</label>
+      <select id="genre-select">
+        <option value="">Select Genre...</option>
+        <option value="fiction">Fiction</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="romance">Romance</option>
+        <option value="mystery">Mystery</option>
+        <option value="gothic">Gothic</option>
+        <option value="horror">Horror</option>
+      </select>
+
+      <br><br>
+
+      <label for="search-input">Enter a book:</label>
+      <input type="text" id="search-input" placeholder="Type a book or song...">
+      
+      <br><br>
+      
+      <button id="search-button">Search</button>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results-section">
+      <h2>Recommendations</h2>
+      <div id="book-results">
+        <h3>Books</h3>
+        <ul id="book-list"></ul>
+      </div>
+      <div id="song-results">
+        <h3>Songs</h3>
+        <ul id="song-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RockandRead. All rights reserved.</p>
+  </footer>
+</body>
+</html>

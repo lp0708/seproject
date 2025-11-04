@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F3F4; /* Light Gray */
+    color: #e9f4e1; /* Changed text color */
+}
+
+.header {
+    background-image: url('10.jpg');
+    color: #F0F3F4; /* Light Gray */
+    text-align: center;
+    padding: 8rem 1rem;
+}
+
+.header .overlay {
+    background-color: #3349213b; /* Darkest Green */
+    padding: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+main {
+    padding: 2rem;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-image: url('.jpg');
+    background-color: #4A5E3D; /* Light Green */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #4A5E3D; /* Dark Green */
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    color: #e9f4e1; /* Changed text color */
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #e9f4e1; /* Changed text color */
+}
+
+.about-text a {
+    color: #f6f8f5; /* Dark Green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-text a:hover {
+    color: #2E3A24; /* Darkest Green */
+}
+
+.footer {
+    text-align: center;
+    background-color: #2E3A24; /* Darkest Green */
+    color: #F0F3F4; /* Light Gray */
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

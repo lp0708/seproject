@@ -1,0 +1,147 @@
+/* Updated styles.css */
+
+/* General styles */
+body {
+  font-family: 'Lato', 'Roboto';
+  margin: 0;
+  padding: 0;
+  background-color: #F0F3F4; /* Light grayish background */
+  color: #2E3A24; /* Deep olive for text */
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(135deg, #4A5E3D, #2E3A24); /* Olive gradient */
+  color: #153b24; /* Light green */
+  text-align: center;
+  padding: 2rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  letter-spacing: 1.5px;
+  color: #F0F3F4; /* Light grayish white */
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.8rem;
+  color: #dce7e0; /* Light green */
+  opacity: 0.9;
+}
+
+/* Main content styles */
+main {
+  padding: 2rem;
+  background-color: #F0F3F4; /* Light background for main */
+}
+
+#search-section {
+  background-color: #2E3A24; /* Olive green */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  color: #F0F3F4; /* Light text for contrast */
+}
+
+#search-section h2 {
+  margin-top: 0;
+  font-size: 2.4rem;
+  color: #e3efe8; /* Light green accent */
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.8rem;
+  color: #e3efe8; /* Light text */
+}
+
+select, input[type="text"] {
+  width: 95%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #6B8E23; /* Olive drab border */
+  border-radius: 8px;
+  background-color: #2E3A24; /* Deep olive for input background */
+  color: #A9DFBF; /* Light green text */
+  font-size: 1rem;
+}
+
+button {
+  background: linear-gradient(90deg, #A9DFBF, #6B8E23); /* Light green to Olive drab */
+  color: #2E3A24; /* Deep olive text */
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #6B8E23, #A9DFBF); /* Reverse gradient */
+  box-shadow: 0 6px 14px rgba(107, 142, 35, 0.8);
+}
+
+/* Results section */
+
+#results-section {
+  background-image: url('.jpg');
+  background-color: #2E3A24; /* Olive green for results box */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  padding: 2.5rem;
+  color: ##e3efe8; /* Light text for contrast */
+}
+
+#results-section h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #e3efe8; /* Light green */
+}
+
+#results-section h3 {
+  margin-bottom: 0.5rem;
+  color: #afba99; /* Olive drab */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #2E3A24; /* Deep olive for divider */
+  color: #F0F3F4; /* Light text */
+  display: flex; /* Added for better alignment of images and text */
+  align-items: center;
+  gap: 1rem; /* Space between image and text */
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Book image styles */
+.book-image {
+  width: 130px; /* Increased size for better visibility */
+  height: auto;
+  border: 3px solid #6B8E23; /* Olive drab border */
+  border-radius: 8px; /* Rounded edges for images */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Shadow for a pop-out effect */
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  background-color: #2E3A24; /* Deep olive */
+  color: #A9DFBF; /* Light green */
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 3px solid #6B8E23; /* Olive drab */
+}
